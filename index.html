@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+  <style>
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #1f1c2c, #928dab);
+        color: white;
+    }
+    
+    header {
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    
+    .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar .nav-links li {
+        margin: 0 15px;
+    }
+    
+    .navbar .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        transition: color 0.3s;
+    }
+    
+    .navbar .nav-links a:hover {
+        color: #ff6347;
+    }
+    
+    .hero {
+        margin-top: 70px;
+    }
+    
+    .hero h1 {
+        font-size: 3em;
+    }
+    
+    .hero p {
+        font-size: 1.5em;
+    }
+    
+    .hero img {
+        border-radius: 50%;
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    main {
+        padding: 50px 20px;
+    }
+    
+    section {
+        margin-bottom: 50px;
+    }
+    
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .project-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .project {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: center;
+    }
+    
+    .project h3 {
+        margin-top: 0;
+    }
+    
+    .project a {
+        color: #ff6347;
+        text-decoration: none;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    body {
+        margin: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #1f1c2c, #928dab);
+        color: white;
+    }
+    
+    header {
+        text-align: center;
+        padding: 50px 0;
+    }
+    
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        padding: 10px 0;
+        z-index: 1000;
+    }
+    
+    .navbar .nav-links {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navbar .nav-links li {
+        margin: 0 15px;
+    }
+    
+    .navbar .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-size: 1.2em;
+        transition: color 0.3s;
+    }
+    
+    .navbar .nav-links a:hover {
+        color: #ff6347;
+    }
+    
+    .hero {
+        margin-top: 70px;
+    }
+    
+    .hero h1 {
+        font-size: 3em;
+    }
+    
+    .hero p {
+        font-size: 1.5em;
+    }
+    
+    .hero img {
+        border-radius: 50%;
+        margin-top: 20px;
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+    }
+    
+    main {
+        padding: 50px 20px;
+    }
+    
+    section {
+        margin-bottom: 50px;
+    }
+    
+    h2 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .project-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+        gap: 70px;
+       
+    }
+    
+    .project {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: left;
+    }
+    
+    .project h3 {
+        margin-top: 0;
+        font-size: 18px;
+    }
+    
+    .project a {
+        color: #ff6347;
+        text-decoration: none;
+    }
+    
+    footer {
+        text-align: left;
+        padding: 20px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+    .project1 {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: left;
+    }
+    
+    .project1 h4 {
+        margin-top: 0;
+        font-size: 18px;
+    }
+    
+    .project1 a {
+        color: #ff6347;
+        text-decoration: none;
+    }
+    
+    .project2 {
+        background: rgba(0, 0, 0, 0.8);
+        padding: 20px;
+        margin: 10px;
+        border-radius: 10px;
+        width: 300px;
+        text-align: left;
+    }
+    
+    .project2 h5 {
+        margin-top: 0;
+        font-size: 18px;
+    }
+    
+    .project2 a {
+        color: #ff6347;
+        text-decoration: none;
+    }
+    
+    footer {
+        text-align: center;
+        padding: 20px 0;
+        background: rgba(0, 0, 0, 0.8);
+    }
+    
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero" id="home">
+            <h1>Hello, I'm Shoiti Kumari</h1>
+            <p>Seeking a challenging position in a reputable organization to expand and utilize my learning, skills, and knowledge. 
+                Possess excellent communication skills and have an eye for detail. Flexible to work in any environment as required. 
+                I have a creative mind and I'm always up for new challenges.</p>
+            <img src="pc.jpg" alt="Your Photo">
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a recent graduate from DHA Suffa University with a Bachelor's degree in Computer Science. 
+                During my academic journey, I developed a strong foundation in programming, web development, and database management. 
+                My education provided me with hands-on experience in various technologies, including Microsoft Office, Python, HTML, CSS, and JavaScript.
+                <br></br>
+                In addition to my academic achievements, I gained practical experience during my internship at Hascol. 
+                At Hascol, I was part of the IT team, where I worked on data analyst and basics of powerbi. 
+                This experience allowed me to apply my knowledge in a real-world setting, collaborate with professionals, and improve my problem-solving skills.
+                <br></br>
+                I am passionate about technology and continuously strive to learn and grow in the field of computer science. 
+                My goal is to leverage my skills and experience to contribute to innovative projects and advance my career as a web developer and programmer.
+            </p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <!-- Repeat this block for each project -->
+                <div class="project">
+                    <h3>Real Time Character</h3>
+                    <p>In web development, using HTML, CSS, and JavaScript, 
+                        you can enhance user experience by implementing text fields and text areas with character limits and counters. 
+                        This feature informs users about the maximum number of characters allowed before they start typing, helping them manage their input effectively. 
+                        Character limits are particularly useful for data collection forms, ensuring inputs remain within the desired length. 
+                        Additionally, real-time character counters provide immediate feedback, showing how many characters have been used and how many remain. 
+                        While character counts are functional for data validation, they can also be used creatively to guide users, ensuring concise and relevant content. 
+                        This approach balances user-friendly interaction with practical constraints, improving both the accuracy and efficiency of data entry.</p>
+                    <a href="project-link" target="_blank">View Project</a>
+                </div>
+                <!-- End of project block -->
+                <!-- Repeat this block for each project -->
+                <div class="project1">
+                    <h4>Kids Facial Emotion Recognition</h4>
+                    <p>Facial expressions convey crucial nonverbal cues such as emotions, motivations, and intentions. 
+                        With the rise of AI in Facial Expression Recognition (FER), there is great potential to understand our behavioral patterns. 
+                        I have reviewed recent advancements in FER using machine learning and deep learning techniques post-2020, comparing them with earlier trends up to 2024. 
+                        My focus is on the practical application of machine learning models across different formats and demographics. 
+                        By using transfer learning with CNNs like VGG16 and ensemble techniques like gradient boosting and SVM, 
+                        I aim to improve the accuracy of FER, advancing the field significantly.</p>
+                    <a href="c:\Users\intern.it\Downloads\R-2036 Research Paper FYP-1.pdf" target="_blank">View Project</a>
+                </div>
+                <!-- End of project block -->
+            <div class="project2">
+                <h5>Time managment</h5>
+                <p>The provided formula is used in Excel to determine the status of an employee's workday based on their clock-in and clock-out times, tailored for each day of the week. 
+                    It checks if the employee ”EARLYOUT”, “OKAY”, or “LATE” by comparing their times against predefined thresholds. 
+                    For each day, different conditions are set to evaluate the employee's punctuality and departure times, ensuring specific and accurate assessment for Monday, Tuesday ,Wednesday, Thursday, and Friday.</p>
+                <a href="c:\Users\intern.it\Downloads\Time Management Project.pdf" target="_blank">View Project</a>
+            </div>
+            <!-- End of project block -->
+        </div> 
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Phone: <a href="phoneto:03065394405">03065394405</a></p>
+            <p>Email: <a href="mailto:shoitikewal@gmail.com">shoitikewal@gmail.com</a></p>
+            <p>LinkedIn: <a href="linkedln.com/in/shoiti-kewalramani-ab1491243" target="_blank">linkedln.com/in/shoiti-kewalramani-ab1491243 </a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Shoiti Kumari. All Rights Reserved.</p>
+    </footer>
+    
+</body>
+</html>
